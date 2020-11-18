@@ -10,6 +10,7 @@ export class FwdalgoService {
   graph:number[][]
   V:number = 2;
   INF:number = 9999;
+  solution:String
   floydWarshallAlgorithm() {
 
    debugger;
@@ -66,7 +67,7 @@ printSolution(dist)
               console.log(dist[i][j] + " ");
             }
         }
-
+        this.solution = dist[i][j] + " ";
         console.log();
     }
 }
