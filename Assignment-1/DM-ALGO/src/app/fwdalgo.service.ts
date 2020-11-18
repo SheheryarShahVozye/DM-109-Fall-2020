@@ -8,7 +8,7 @@ export class FwdalgoService {
 
   constructor() { }
   graph:number[][]
-  V:number = 4;
+  V:number = 2;
   INF:number = 9999;
   floydWarshallAlgorithm() {
 
