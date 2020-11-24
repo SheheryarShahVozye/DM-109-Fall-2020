@@ -7,6 +7,7 @@ import {FwdalgoService} from 'src/app/fwdalgo.service'
 })
 export class AppComponent {
   title = 'DM-ALGO';
+  Value = ''
 
   constructor( public fwdAlgo:FwdalgoService) {
 
@@ -15,7 +16,8 @@ export class AppComponent {
    construct()
    {
      debugger;
-     this.fwdAlgo.floydWarshallAlgorithm();
+     this.Value = this.Value.replace(" ' "," ");
+     this.fwdAlgo.jsCodeRemaped(this.Value)
    }
 }
 
